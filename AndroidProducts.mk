@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_chiron.mk
+    $(LOCAL_DIR)/miku_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_chiron-user \
-    lineage_chiron-userdebug \
-    lineage_chiron-eng
+    miku_chiron-user \
+    miku_chiron-userdebug \
+    miku_chiron-eng
