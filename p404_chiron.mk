@@ -21,10 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Project 404 Stuff
+$(call inherit-product, vendor/404/configs/common.mk)
 
-PRODUCT_NAME := lineage_chiron
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Include GAPPS
+WITH_GAPPS := true
+
+PRODUCT_NAME := p404_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
