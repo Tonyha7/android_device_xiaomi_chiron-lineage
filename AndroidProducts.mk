@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_chiron.mk
+    $(LOCAL_DIR)/droidx_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_chiron-user \
-    lineage_chiron-userdebug \
-    lineage_chiron-eng
+    droidx_chiron-user \
+    droidx_chiron-userdebug \
+    droidx_chiron-eng
