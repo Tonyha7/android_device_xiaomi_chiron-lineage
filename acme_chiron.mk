@@ -26,7 +26,7 @@ $(call inherit-product, vendor/acme/config/mobile.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
-WITH_GMS_CORE := true
+WITH_GMS := true
 
 PRODUCT_NAME := acme_chiron
 PRODUCT_DEVICE := chiron
