@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common Acme UI stuff.
 $(call inherit-product, vendor/acme/config/mobile.mk)
 
+# Add Dolby
+$(call inherit-product-if-exists, vendor/dolby/ds/dolby-product.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 
 WITH_GMS := true
