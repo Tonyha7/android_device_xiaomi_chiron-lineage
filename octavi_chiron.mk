@@ -26,6 +26,7 @@ $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Octavi
 OCTAVI_BUILD_MAINTAINER := Tonyha7
+WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
