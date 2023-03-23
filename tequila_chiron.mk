@@ -27,6 +27,9 @@ $(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 # Add Dolby
 $(call inherit-product-if-exists, vendor/dolby/ds/dolby-product.mk)
 
+
+WITH_GMS := true
+
 PRODUCT_NAME := tequila_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
