@@ -17,6 +17,8 @@
 # Inherit from msm8998-common
 include device/xiaomi/msm8998-common/BoardConfigCommon.mk
 
+BUILD_BROKEN_DUP_RULES := true
+
 DEVICE_PATH := device/xiaomi/chiron
 
 # Kernel
