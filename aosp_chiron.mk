@@ -21,10 +21,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common VoidUI stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_chiron
+# VoidUI Feature Flags
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_BOOT_ANIMATION_RES := 1080
+IS_PHONE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# VoidUI Maintainer Flags
+VOID_MAINTAINER := Tonyha7
+
+PRODUCT_NAME := aosp_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2

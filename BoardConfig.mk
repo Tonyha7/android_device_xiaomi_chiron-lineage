@@ -21,6 +21,8 @@ DEVICE_PATH := device/xiaomi/chiron
 
 # Kernel
 TARGET_KERNEL_CONFIG := chiron_defconfig
+TARGET_KERNEL_BUILD_HOST := UNDERWORLD
+TARGET_KERNEL_BUILD_USER := "Tonyha7"
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := chiron
